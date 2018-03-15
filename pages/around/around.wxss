@@ -1,0 +1,22 @@
+
+.list,
+.list .left .name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list{
+  padding: 20rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.list .left{
+  width: calc(100% - 80rpx);
+  padding-right: 20rpx;
+}
+.list .left .name{
+  margin-bottom: 10rpx;
+}
+.list .right{
+  width: 80rpx;
+}

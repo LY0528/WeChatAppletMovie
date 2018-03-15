@@ -1,0 +1,48 @@
+/**app.wxss**/
+   @import "/assets/fonts/iconfont"; 
+
+ .container {
+  background: #f4f5f9;
+  color: #333;
+}
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.box-sizing{
+  box-sizing: border-box;
+}  
+.box-shadow{
+  box-shadow: 0 0 8rpx rgba(0,0,0,.2);
+}
+.font10{
+  font-size: 20rpx;
+}
+.font12{
+  font-size: 24rpx;
+}
+.font14{
+  font-size: 28rpx;
+}
+.font16{
+  font-size: 32rpx;
+}
+.font18{
+  font-size: 36rpx;
+}
+.font20{
+  font-size: 40rpx;
+}
+.font24{
+  font-size: 48rpx;
+}
+.font-9{
+  color: #999;
+}
+.dark-red{
+  color: #e54847;
+}
+.bright-red{
+  color: #FA5939;
+}

@@ -1,0 +1,48 @@
+
+.cinemas-info,
+.cinemas-info .left .name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cinemas-info{
+  padding: 20rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.cinemas-info .left{
+  width: calc(100% - 80rpx);
+  padding-right: 20rpx;
+}
+.cinemas-info .left .name{
+  margin-bottom: 10rpx;
+}
+.cinemas-info .right{
+  width: 80rpx;
+}
+.swiper .name,
+.tickets-info .list{
+  padding: 20rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.tickets-info .list,
+.tickets-info .list .left,
+.tickets-info .list .right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tickets-info .list .left,
+.tickets-info .list .right{
+  width: 50%;
+}
+.tickets-info .list .right .price{
+  margin-left: 40rpx;
+}
+.buy-ticket{
+  line-height: normal;
+  padding: 20rpx;
+  border: 2rpx solid #FA5939;
+  margin: 0;
+}

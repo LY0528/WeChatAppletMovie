@@ -1,0 +1,48 @@
+<view class="container">
+  <view class='cinemas-info box-sizing'>
+    <view class='left box-sizing'>
+      <view class='name'>
+        <text class='font16 text-ellipsis'>{{itemList.cinema_info.name}}</text>
+      </view>
+      <view class='font-9 font12'>{{itemList.cinema_info.address}}</view>  
+    </view>
+    <view 
+      class='right font24 bright-red iconfont icon-sm-my-tele'
+      data-phone="{{itemList.cinema_info.telephone}}"
+      bindtap='callPhone'>
+    </view>
+  </view>
+  <view class='swiper'>
+    <swiper bindchange="handleChange">
+      <view 
+        wx:for="{{itemList.lists}}" 
+        wx:key="{{item.id}}">
+        <swiper-item>
+          <image src="{{item.pic_url}}"/>
+        </swiper-item>
+      </view>
+    </swiper>
+    <view class='name font18 box-sizing text-ellipsis'>{{currentData.movieName}}</view>
+  </view>
+  <view class='tickets-info'>
+    <view 
+      class='list box-sizing'
+      wx:for="{{currentData.broadcast}}"
+      wx:key="{{item.id}}">
+      <view class='left'>
+        <text class='font20'>{{item.time}}</text>
+        <view>
+          <view class='font16'>{{item.language}} {{item.type}}</view>
+          <view class='font12'>{{item.hall}}号厅</view>
+        </view>
+      </view>
+      <view class='right'>
+        <view class='font20 dark-red price'>{{item.price}}</view>
+        <button 
+          class='font16 bright-red buy-ticket'
+          data-url="{{item.ticket_url}}"
+          bindtap='buyTicket'>选座购票</button>
+      </view>
+    </view>
+  </view>
+</view>

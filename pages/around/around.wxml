@@ -1,0 +1,23 @@
+<!--around.wxml-->
+<view class="container">
+  <view
+    class='list box-sizing' 
+    wx:for="{{itemList}}"
+    wx:key="{{item.id}}">
+    <view 
+      class='left box-sizing'
+      data-cinemaid="{{item.id}}"
+      bindtap='cinemaMovie'>
+      <view class='name'>
+        <text class='font16 text-ellipsis'>{{item.cinemaName}}</text>
+        <text class='font12 font-9'>{{item.distance}}m</text>
+      </view>
+      <view class='font-9 font12'>{{item.address}}</view>  
+    </view>
+    <view 
+      class='right font24 bright-red iconfont icon-sm-my-tele'
+      data-phone="{{item.telephone}}"
+      bindtap='callPhone'>
+      </view>
+  </view>
+</view>

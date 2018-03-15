@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container list">
+  <view class="item box-sizing box-shadow" 
+    wx:for="{{itemList}}" 
+    wx:key="item.id" 
+    data-movieId="{{item.movieId}}"
+    bindtap='detail'>
+    <image class='poster' src="{{item.pic_url}}"></image>
+    <text class='name text-ellipsis box-sizing'>{{item.movieName}}</text>
+  </view>
+</view>

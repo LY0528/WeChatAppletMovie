@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/around/around",
+    "pages/detail/detail",
+    "pages/cinemasMovies/cinemasMovies"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "今日热映",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "今日热映",
+        "iconPath": "/assets/img/hot1.png",
+        "selectedIconPath": "/assets/img/hot2.png"
+      },
+      {
+        "pagePath": "pages/around/around",
+        "text": "周边影院",
+        "iconPath": "/assets/img/around1.png",
+        "selectedIconPath": "/assets/img/around2.png"
+      }
+    ],
+    "position": "bottom",
+    "selectedColor": "#fe9053"
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "debug": true
+}

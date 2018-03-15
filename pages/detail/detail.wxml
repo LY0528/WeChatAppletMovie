@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='basic-info box-sizing'>
+    <image class='poster' src="{{details.poster}}"></image>
+    <view class='right box-sizing'>
+      <view>
+        <text class='font18'>{{details.title}}</text>
+      </view>
+      <view>
+        <text class='font14'>{{details.country}}/{{details.runtime}}</text>
+      </view>
+      <view wx:if="{{details.actors}}">
+        <text class='font14'>演员：{{details.actors}}</text>
+      </view>
+      <view>
+        <text class='font14'>导演：{{details.directors}}</text>
+      </view>
+      <view>
+        <text class='font14'>语言：{{details.language}}</text>
+      </view>
+      <view>
+        <text class='font14'>{{details.release_date}}上映</text>
+      </view>
+    </view>
+  </view>
+  <view class='intro'>
+    <view wx:if="{{details.plot_simple}}">
+      <text class='font16'>简介：{{details.plot_simple}}</text>
+    </view>
+  </view>
+</view>
